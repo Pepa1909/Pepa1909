@@ -9,4 +9,4 @@ while True:
         print("správně :)")
         break
 print("konec")
-
+# lololol
