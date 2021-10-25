@@ -31,8 +31,8 @@ for _ in range (3):
     right(90)
 # tah_1 = int(input(f"{hrac_1}, vyberte si políčko: "))
 speed(6)
-up()
-for kolo in range(1):
+for kolo in range(9):
+    up()
     tah = (input("vyber policko (čísla 1-9): "))
     if tah == "1":
         setpos(-200, -140)
@@ -56,41 +56,20 @@ for kolo in range(1):
         quit()
     else:
          tah = input("zkus to znovu: ")
-    down()
-    circle(40)
-    tah = (input("vyber policko (čísla 1-9): "))
-    up()
-    if tah == "1":
-        setpos(-240, -140)
-    elif tah == "2":
-        setpos(-140,-140)
-    elif tah == "3":
-        setpos(-40,-140)
-    elif tah == "4":
-        setpos(-240, -40)
-    elif tah == "5":
-        setpos(-140,-40)
-    elif tah == "6":
-        setpos(-40,-40)
-    elif tah == "7":
-        setpos(-240, 60)
-    elif tah == "8":
-        setpos(-140, 60)
-    elif tah == "9":
-        setpos(-40,60)
-    elif tah == "quit":
-        quit()
-    else:
-         tah = input("zkus to znovu: ")
-    down()
-    left(45)
-    forward(120)
-    left(180)
-    forward(60)
-    left(90)
-    forward(60)
-    left(180)
-    forward(120)
-
+    if kolo % 2==0:
+        down()
+        circle(40)
+    else: 
+        left(90)
+        forward(40)
+        left(45)
+        down()
+        for _ in range(4):
+            forward(60)
+            left(180)
+            forward(60)
+            left(90)
+        right(135)
+print("a jsme u konce, klikněte do okna piškvorek pro ukončení.")
 exitonclick()
     
