@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Pepa1909
-- 👀 I’m a beginner learning Python
+- 👀 I’m a beginner learning Python and C
 
 <!---
 Pepa1909/Pepa1909 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
